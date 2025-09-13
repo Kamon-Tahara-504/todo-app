@@ -48,7 +48,7 @@ function App() {
 
     //delall
     const deleteAllTasks = () => {
-        if (window.confirm('全部消すの？')) {
+        if (window.confirm('すべて削除していいですか？')) {
             setTasks([])
         }
     };
@@ -70,10 +70,6 @@ function App() {
             return tasks;
         }
     }, [tasks, filter]);
-
-    //category
-
-    //priority
 
     //statistics
     const stats = {
